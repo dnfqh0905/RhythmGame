@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\NoteBehavior.cs" />
     <Compile Include="Assets\Scripts\NoteController.cs" />
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
+    <None Include="Assets\Resources\Beats\1.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

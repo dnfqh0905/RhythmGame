@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
 
     // 음악 변수
     private AudioSource audioSource;
-    private string music = "Drops of H20";
+    public string music = "1";
 
     // 음악 실행 함수
     void MusicStart()

@@ -111,8 +111,8 @@ MonoBehaviour:
     y: 30
     width: 1904
     height: 931
-  m_MinSize: {x: 683, y: 616}
-  m_MaxSize: {x: 18008, y: 18066}
+  m_MinSize: {x: 681, y: 616}
+  m_MaxSize: {x: 18006, y: 18066}
   vertical: 0
   controlID: 196
 --- !u!114 &6
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 616}
   m_MaxSize: {x: 14006, y: 18066}
   vertical: 1
-  controlID: 83
+  controlID: 159
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,8 +184,8 @@ MonoBehaviour:
     y: 0
     width: 356
     height: 600
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -235,8 +235,8 @@ MonoBehaviour:
     y: 0
     width: 1068
     height: 452
-  m_MinSize: {x: 204, y: 222}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -262,8 +262,8 @@ MonoBehaviour:
     y: 452
     width: 1068
     height: 148
-  m_MinSize: {x: 104, y: 122}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -367,8 +367,8 @@ MonoBehaviour:
     y: 0
     width: 480
     height: 931
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -486,8 +486,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 70320000
-      m_LastClickedID: 12912
+      m_SelectedIDs: 78320000
+      m_LastClickedID: 12920
       m_ExpandedIDs: 74fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -548,9 +548,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 2, z: 0}
+    m_Target: {x: 0.8590936, y: 0.6171218, z: -2.1143994}
     speed: 2
-    m_Value: {x: 0, y: 2, z: 0}
+    m_Value: {x: 0.8590936, y: 0.6171218, z: -2.1143994}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -665,7 +665,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 12912
+  m_LastSelectedObjectID: 12920
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -705,19 +705,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Beats
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 72
   m_LastFolders:
-  - Assets/Resources/Beats
+  - Assets/Scripts
   m_LastFoldersGridSize: 72
   m_LastProjectPath: C:\Nexon\RhythmGame\2D Rhythm Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 60330000
-    m_LastClickedID: 13152
+    m_SelectedIDs: 44300000
+    m_LastClickedID: 12356
     m_ExpandedIDs: 00000000362d0000162f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
