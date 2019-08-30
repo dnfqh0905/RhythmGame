@@ -29,7 +29,7 @@ public class NoteBehavior : MonoBehaviour
         if(Input.GetKey(keyCode))
         {
             // 해당 노트 판정
-            Debug.Log(judge);
+            GameManager.instance.processJudge(judge, noteType);
             // 노트가 판정 선에 닿으면 노트 제거
             if (judge != GameManager.judges.NONE)
                 gameObject.SetActive(false);
@@ -54,6 +54,7 @@ public class NoteBehavior : MonoBehaviour
         else if (other.gameObject.tag == "Miss Line")
         {
             judge = GameManager.judges.MISS;
+            GameManager.instance.processJudge(judge, noteType);
             gameObject.SetActive(false);
         }
     }
