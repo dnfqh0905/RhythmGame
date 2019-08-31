@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour
 
     // 음악 변수
     private AudioSource audioSource;
-    public string music = "1";
 
     // 자동 판정 모드 변수
     public bool autoPerfect;
@@ -54,7 +53,7 @@ public class GameManager : MonoBehaviour
     void MusicStart()
     {
         // 리로스에서 비트 음악 파일 재생
-        AudioClip audioClip = Resources.Load<AudioClip>("Beats/" + music);
+        AudioClip audioClip = Resources.Load<AudioClip>("Beats/" + PlayerInformation.selectedMusic);
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClip;
         audioSource.Play();

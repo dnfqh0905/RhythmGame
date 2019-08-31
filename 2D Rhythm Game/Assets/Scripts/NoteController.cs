@@ -56,7 +56,7 @@ public class NoteController : MonoBehaviour
     {
         noteObjectPooler = gameObject.GetComponent<ObjectPooler>();
         // 리소스 비트 텍스트 파일 호출
-        TextAsset textAsset = Resources.Load<TextAsset>("Beats/" + GameManager.instance.music);
+        TextAsset textAsset = Resources.Load<TextAsset>("Beats/" + PlayerInformation.selectedMusic);
         StringReader reader = new StringReader(textAsset.text); // Alt+Enter
         // 첫번째 줄에 적힌 곡 이름
         musicTitle = reader.ReadLine();
