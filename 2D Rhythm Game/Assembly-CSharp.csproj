@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\BackgroundBehavior.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameResultManager.cs" />
+    <Compile Include="Assets\Scripts\JoinManager.cs" />
     <Compile Include="Assets\Scripts\NoteBehavior.cs" />
     <Compile Include="Assets\Scripts\NoteController.cs" />
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
@@ -282,23 +283,23 @@
     <Reference Include="Firebase.App">
       <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
     </Reference>
+    <Reference Include="Firebase.Auth">
+      <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+    </Reference>
     <Reference Include="Firebase.Platform">
       <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Tasks">
-      <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
     </Reference>
     <Reference Include="Google.MiniJson">
       <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.Auth">
-      <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Compat">
       <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.TaskExtension">
-      <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+    <Reference Include="Unity.Tasks">
+      <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.2f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
