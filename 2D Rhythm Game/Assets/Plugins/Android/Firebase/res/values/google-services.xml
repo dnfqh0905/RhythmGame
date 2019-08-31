@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://unity-rhythm-game-tutori-1f7bf.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">12195012486</string>
+  <string name="google_storage_bucket" translatable="false">unity-rhythm-game-tutori-1f7bf.appspot.com</string>
+  <string name="project_id" translatable="false">unity-rhythm-game-tutori-1f7bf</string>
+  <string name="google_api_key" translatable="false">AIzaSyDDIq-LXRJnVHOocyqYIyEO4U6HI71PchE</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDDIq-LXRJnVHOocyqYIyEO4U6HI71PchE</string>
+  <string name="google_app_id" translatable="false">1:12195012486:android:939048efa5df76c5</string>
+  <string name="default_web_client_id" translatable="false">12195012486-bim1p2llj07monhp61i5siuf7atq47bj.apps.googleusercontent.com</string>
+</resources>
