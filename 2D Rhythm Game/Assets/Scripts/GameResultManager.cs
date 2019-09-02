@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 using System.IO;
+using Firebase;
+using Firebase.Database;
+using Firebase.Unity.Editor;
 
 public class GameResultManager : MonoBehaviour
 {
@@ -12,6 +15,10 @@ public class GameResultManager : MonoBehaviour
     public Text scoreUI;
     public Text maxComboUI;
     public Image RankUI;
+
+    public Text rank1UI;
+    public Text rank2UI;
+    public Text rank3UI;
 
     void Start()
     {
@@ -46,6 +53,47 @@ public class GameResultManager : MonoBehaviour
         {
             RankUI.sprite = Resources.Load<Sprite>("Sprites/Rank C");
         }
+        rank1UI.text = "데이터를 불러오는 중입니다.";
+        rank2UI.text = "데이터를 불러오는 중입니다.";
+        rank3UI.text = "데이터를 불러오는 중입니다.";
+        DatabaseReference reference;
+        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://unity-rhythm-game-tutori-1f7bf.firebaseio.com/");
+        reference = FirebaseDatabase.DefaultInstance.GetReference("ranks").Child(PlayerInformation.selectedMusic);
+        // 데이터 셋의 모든 데이터를 JSON형태로 가져옴
+        reference.OrderByChild("score").GetValueAsync().ContinueWith(task =>
+        {
+            // 데이터 가져오기 성공
+            if (task.IsCompleted)
+            {
+                List<string> rankList = new List<string>();
+                List<string> emailList = new List<string>();
+                DataSnapshot snapshot = task.Result;
+                // JSON 데이터 각 원소에 접근
+                foreach (DataSnapshot data in snapshot.Children)
+                {
+                    IDictionary rank = (IDictionary)data.Value;
+                    emailList.Add(rank["email"].ToString());
+                    rankList.Add(rank["score"].ToString());
+                }
+                // 정렬 이후 내림차순 정렬
+                emailList.Reverse();
+                rankList.Reverse();
+                // Top3 출력
+                rank1UI.text = "기록이 없습니다.";
+                rank2UI.text = "기록이 없습니다.";
+                rank3UI.text = "기록이 없습니다.";
+                List<Text> textList = new List<Text>();
+                textList.Add(rank1UI);
+                textList.Add(rank2UI);
+                textList.Add(rank3UI);
+                int count = 1;
+                for (int i = 0; i < rankList.Count && i < 3; i++)
+                {
+                    textList[i].text = count + "위 : " + emailList[i] + " (" + rankList[i] + " 점";
+                    count = count + 1;
+                }
+            }
+        });
     }
 
     public void Replay()

@@ -288,6 +288,9 @@
     <Reference Include="Firebase.Auth">
       <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
     </Reference>
+    <Reference Include="Firebase.Database">
+      <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
+    </Reference>
     <Reference Include="Firebase.Platform">
       <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
     </Reference>
@@ -297,17 +300,14 @@
     <Reference Include="Google.MiniJson">
       <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Sharpen">
+      <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Compat">
       <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Tasks">
       <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.Sharpen">
-      <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.Database">
-      <HintPath>C:/Nexon/RhythmGame/2D Rhythm Game/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
