@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class LoginManager : MonoBehaviour
-{
+{    
     // 파이어베이스 인증 기능 객체
     private FirebaseAuth auth;
 
@@ -19,6 +19,7 @@ public class LoginManager : MonoBehaviour
 
     void Start()
     {
+        Screen.SetResolution(1920, 1200, true);
         // 파이어베이스 인증 객체 초기화
         auth = FirebaseAuth.DefaultInstance;
         messageUI.text = "";

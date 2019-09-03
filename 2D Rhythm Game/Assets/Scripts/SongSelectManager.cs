@@ -101,7 +101,9 @@ public class SongSelectManager : MonoBehaviour
         public double timestamp;
         public Charge(double timestmap)
         {
+#pragma warning disable CS1717 // 같은 변수에 할당했습니다.
             this.timestamp = timestamp;
+#pragma warning restore CS1717 // 같은 변수에 할당했습니다.
         }
     }
 
