@@ -56,9 +56,7 @@ public class GameResultManager : MonoBehaviour
         rank1UI.text = "데이터를 불러오는 중입니다.";
         rank2UI.text = "데이터를 불러오는 중입니다.";
         rank3UI.text = "데이터를 불러오는 중입니다.";
-        DatabaseReference reference;
-        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://unity-rhythm-game-tutori-1f7bf.firebaseio.com/");
-        reference = FirebaseDatabase.DefaultInstance.GetReference("ranks").Child(PlayerInformation.selectedMusic);
+        DatabaseReference reference = PlayerInformation.GetDatabaseReference().Child("ranks").Child(PlayerInformation.selectedMusic);
         // 데이터 셋의 모든 데이터를 JSON형태로 가져옴
         reference.OrderByChild("score").GetValueAsync().ContinueWith(task =>
         {

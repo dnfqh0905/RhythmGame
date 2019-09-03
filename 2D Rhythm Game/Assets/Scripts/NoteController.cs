@@ -127,9 +127,7 @@ public class NoteController : MonoBehaviour
     void AddRank()
     {
         // 데이터베이스 접속 설정
-        DatabaseReference reference;
-        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://unity-rhythm-game-tutori-1f7bf.firebaseio.com/");
-        reference = FirebaseDatabase.DefaultInstance.RootReference;
+        DatabaseReference reference = PlayerInformation.GetDatabaseReference();
 
         // 삽입할 데이터 준비
         DateTime now = DateTime.Now.ToLocalTime();
